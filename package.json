@@ -26,5 +26,16 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@nestjs/config": "^3.2.3",
+    "@nestjs/mapped-types": "^2.0.5",
+    "@nestjs/mongoose": "^10.0.10",
+    "antd": "^5.21.3",
+    "axios": "^1.7.7",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "mongoose": "^8.7.1",
+    "react-force-graph": "^1.44.5"
+  }
 }

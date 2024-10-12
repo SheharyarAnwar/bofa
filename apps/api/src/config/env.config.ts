@@ -7,6 +7,9 @@ class EnvironmentVariables {
 
   @IsNotEmpty({ message: 'PG_DATABASE_URL is required' })
   PG_DATABASE_URL: string;
+
+  @IsNotEmpty({ message: 'MONGODB_URI is required' })
+  MONGODB_URI: string;
 }
 
 export function validate(config: Record<string, unknown>) {
@@ -26,4 +29,5 @@ export function validate(config: Record<string, unknown>) {
 export interface IEnvConfig {
   OPEN_API_KEY: string;
   PG_DATABASE_URL: string;
+  MONGODB_URI: string;
 }

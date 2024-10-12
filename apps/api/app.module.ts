@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { SkillsModule } from './skills/skills.module';
+import { SkillsModule } from './src/skills/skills.module';
 
 @Module({
   imports: [
