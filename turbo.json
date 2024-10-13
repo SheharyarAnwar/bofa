@@ -18,6 +18,10 @@
       ]
     },
     "lint": {},
+    "globalEnv":[
+      "MONGODB_URI",
+      "NEXT_PUBLIC_BACKEND_URL"
+    ],
     "test": {},
     "test:e2e": {}
   }

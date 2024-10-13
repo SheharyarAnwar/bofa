@@ -33,13 +33,13 @@ export class SkillsController {
     return this.skillsService.remove(id);
   }
 
-  @Post(':id/sub-skills')
-  addSubSkill(@Param('id') id: string, @Body('subSkillId') subSkillId: string) {
-    return this.skillsService.addSubSkill(id, subSkillId);
+  @Post(':id/prerequisites')
+  addPrerequisite(@Param('id') id: string, @Body('prerequisiteId') prerequisiteId: string) {
+    return this.skillsService.addPrerequisite(id, prerequisiteId);
   }
 
-  @Post(':id/related-skills')
-  addRelatedSkill(@Param('id') id: string, @Body('relatedSkillId') relatedSkillId: string) {
-    return this.skillsService.addRelatedSkill(id, relatedSkillId);
+  @Post('populate')
+  populateSkills() {
+    return this.skillsService.populateSkills();
   }
 }

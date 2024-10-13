@@ -13,10 +13,7 @@ export class Skill extends Document {
   estimatedEffortHours: number;
 
   @Prop({ type: [{ type: Types.ObjectId, ref: 'Skill' }] })
-  subSkills: Skill[];
-
-  @Prop({ type: [{ type: Types.ObjectId, ref: 'Skill' }] })
-  relatedSkills: Skill[];
+  prerequisites: Skill[];
 
   @Prop([String])
   resources: string[];

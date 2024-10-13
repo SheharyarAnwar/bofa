@@ -3,7 +3,6 @@ export interface Skill {
   name: string;
   description?: string;
   estimatedEffortHours: number;
-  subSkills?: string[];
-  relatedSkills?: string[];
+  prerequisites?: string[];
   resources?: string[];
 }

@@ -15,12 +15,7 @@ export class CreateSkillDto {
   @IsOptional()
   @IsArray()
   @IsString({ each: true })
-  subSkillIds?: string[];
-
-  @IsOptional()
-  @IsArray()
-  @IsString({ each: true })
-  relatedSkillIds?: string[];
+  prerequisiteIds?: string[];
 
   @IsOptional()
   @IsArray()
