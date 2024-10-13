@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@repo/ui": "*",
+    "antd": "^5.14.1",
     "next": "^14.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -30,8 +31,11 @@
     "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.20",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.7.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
     "typescript": "^5.3.3"
   }
 }

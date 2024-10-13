@@ -1,5 +1,5 @@
 export interface Skill {
-  id: string;
+  _id: string;
   name: string;
   description?: string;
   estimatedEffortHours: number;
