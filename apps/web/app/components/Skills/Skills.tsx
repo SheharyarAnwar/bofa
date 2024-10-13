@@ -23,8 +23,6 @@ const Skills: React.FC = () => {
   const graphContainerRef = useRef<HTMLDivElement>(null);
   const [graphWidth, setGraphWidth] = useState(0);
   const [graphHeight, setGraphHeight] = useState(0);
-  const [currentSkills, setCurrentSkills] = useState<string[]>([]);
-  const [desiredSkills, setDesiredSkills] = useState<string[]>([]);
   const [learningPath, setLearningPath] = useState<string[]>([]);
 
   useEffect(() => {
@@ -97,9 +95,10 @@ const Skills: React.FC = () => {
       const desiredSkills = values.desiredSkills; // Get desired skills from form
   
       // Calculate the optimal learning path
-      const learningPath = findOptimalLearningPath(graphData, currentSkills, desiredSkills);
+      // const learningPath = findOptimalLearningPath(graphData, currentSkills, desiredSkills);
   
-      // Display the learning path
+      // // Display the learning path
+      console.log({graphData})
       console.log('Optimal Learning Path:', learningPath);
       setLearningPath(learningPath);
     });
@@ -218,15 +217,7 @@ const Skills: React.FC = () => {
       
       
       </div>
-      <div>
-      <h3>Optimal Learning Path:</h3>
-      <ul>
-        {learningPath.map(skillId => {
-          const skill = allSkills.find(s => s._id === skillId);
-          return <li key={skillId}>{skill ? skill.name : skillId}</li>;
-        })}
-      </ul>
-    </div>
+      
     </>
   );
 };
